@@ -45,16 +45,45 @@ struct AnimalDetailView: View {
                 Group {
                     HeadingView(headingImage: "photo", headingText: "Wilderness in Pictures")
                     InsetGalleryView(animal: animal)
+                    
                 }
                 .padding(.horizontal)
                 
                 //Facts
+                Group {
+                    HeadingView(headingImage: "questionmark.circle", headingText: "Did you know?")
+                    InsetFactView(animal: animal)
+                }
+                .padding(.horizontal)
                 
                 //Description
+                Group {
+                    HeadingView(headingImage: "info.circle", headingText: "All About \(animal.name)")
+                    
+                    Text(animal.description)
+                        .multilineTextAlignment(.leading)
+                        .layoutPriority(1)
+                    
+                }//: Group
+                .padding(.horizontal)
                 
-                //Nav
+                
+                //MAP
+                Group {
+                    HeadingView(headingImage: "map", headingText: "National Parks")
+                    
+                    InsetMapView()
+                }
+                .padding(.horizontal)
+                
                 
                 //Link
+                Group {
+                    HeadingView(headingImage: "books.vertical", headingText: "Learn More...")
+                    
+                    ExternalWebLinkView(animal: animal)
+                }
+                .padding(.horizontal)
                 
             }//: Vstack
             .navigationBarTitle("Learn About \(animal.name)", displayMode: .inline)
