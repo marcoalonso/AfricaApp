@@ -96,9 +96,10 @@ struct AnimalDetailView: View {
                             Link("Website", destination: (URL(string: "https://github.com/marcoalonso") ?? URL(string: "https://apple.com"))!)
                         }
                         .foregroundColor(.accentColor)
+                        
                     }//: HStack
                 }
-                .padding(.horizontal)
+                .padding(.horizontal, 10)
                 
             }//: Vstack
             .navigationBarTitle("Learn About \(animal.name)", displayMode: .inline)
