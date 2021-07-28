@@ -84,6 +84,21 @@ struct AnimalDetailView: View {
                     ExternalWebLinkView(animal: animal)
                 }
                 .padding(.horizontal)
+                Group {
+                    HeadingView(headingImage: "desktopcomputer", headingText: "Developed By:")
+                    HStack {
+                        Image(systemName: "person")
+                        Text("Ing. Marco Alonso")
+                        Spacer()
+                        Group{
+                            Image(systemName: "arrow.up.right.square")
+                            
+                            Link("Website", destination: (URL(string: "https://github.com/marcoalonso") ?? URL(string: "https://apple.com"))!)
+                        }
+                        .foregroundColor(.accentColor)
+                    }//: HStack
+                }
+                .padding(.horizontal)
                 
             }//: Vstack
             .navigationBarTitle("Learn About \(animal.name)", displayMode: .inline)
