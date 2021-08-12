@@ -7,6 +7,20 @@
     "longitude" : 34.8333333
   },
   {
+    "id" : "manovo",
+    "name" : "Manovo National Park",
+    "image" : "map-manovo",
+    "latitude" : 8.4609029,
+    "longitude" : 21.7638113
+  },
+  {
+    "id" : "bamingui",
+    "name" : "Bamingui-Bangoran National Park",
+    "image" : "map-bamingui",
+    "latitude" : 8.1575151,
+    "longitude" : 19.7588349
+  },
+  {
     "id" : "kruger",
     "name" : "Kruger National Park",
     "image" : "map-kruger",
@@ -33,6 +47,20 @@
     "image" : "map-etosha",
     "latitude" : -18.8555909,
     "longitude" : 16.327131
+  },
+  {
+    "id" : "pendjari",
+    "name" : "Pendjari National Park",
+    "image" : "map-pendjari",
+    "latitude" : 11.2480753,
+    "longitude" : 1.5982705
+  },
+  {
+    "id" : "comoe",
+    "name" : "Comoe National Park",
+    "image" : "map-comoe",
+    "latitude" : 9.0003868,
+    "longitude" : -3.5004774
   },
   {
     "id" : "solonga",
